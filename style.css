@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+
+nav ul{
+    display: flex;
+     list-style: none;
+    background-color: black;    
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.brand img{
+    width: min(15vw, 150px);
+    padding: 0 8px;
+    justify-content: start;
+}
+
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.container{
+    min-height: 65vh;
+    background-color:black;
+    color: white;
+    font-family: 'Varela Round' , sans-serif;
+    display:flex;
+    margin: 23px auto;
+    width:80%;
+    background-image: url('https://images.unsplash.com/photo-1615554851544-e6249b92a492?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGlzdGVuaW5nJTIwdG8lMjBtdXNpY3xlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}  
+
+.bottom{
+    position: sticky;
+    height:130px;
+    background-color:black;
+    bottom:0;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 25px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+}
+
+.songItem img{
+    width:43px;
+    margin: 0 23px;
+}
+
+.songItem{
+    display:flex;
+    height:50px;
+    background-color: white;
+    width:80%;
+    color:black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.timestamp{
+    margin: 0 60px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.songList{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.bottom i{
+   margin: auto;
+}
+
+
+@media only screen and (max-width : 991.5px) {
+    .container{
+        /* min-height: vh; */
+        background-color:black;
+        color: white;
+        /* padding:20px; */
+        font-family: 'Varela Round' , sans-serif;
+        display:flex;
+        /* margin: 23px auto; */
+        width:100%;
+        background-image: url('https://images.unsplash.com/photo-1615554851544-e6249b92a492?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGlzdGVuaW5nJTIwdG8lMjBtdXNpY3xlbnwwfHwwfHw%3D&w=1000&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;   
+    } 
+    .songList{
+        /* position: absolute; */
+        width:100%;
+        /* top: 50%;
+        left: 50%;
+    transform: translate(-50%, -50%); */
+    }
+    .li img{
+        display:none;
+    }
+    .bottom{
+        position: sticky;
+        height:180px;
+        background-color:black;
+        bottom:0;
+        color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
